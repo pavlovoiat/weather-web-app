@@ -2,6 +2,10 @@
 
 A simple pet project designed to practice working with REST APIs, asynchronous JavaScript, and UI design.
 
+<p align="center">
+  <img src="weather-web-app.png" width="90%" alt="Screenshot">
+</p>
+
 ## Tech Stack
 
 - HTML5 / Tailwindcss
