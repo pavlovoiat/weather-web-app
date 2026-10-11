@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+.suggestion-item {
+    @apply p-3 pr-5 pl-5 text-white cursor-pointer border-b-white/10 whitespace-nowrap overflow-hidden text-ellipsis hover:bg-white/20;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}

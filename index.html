@@ -8,34 +8,38 @@
     <title>Weather</title>
 </head>
 
-<body>
-    <div>
-        <div>
-            <input id="searchBar" type="text" placeholder="City...">
-            <button id="button">Check</button>
+<body class="bg-linear-to-b from-purple-950 to-purple-500 min-h-svh flex flex-col justify-center items-center p-5">
+    <div class="w-full max-w-100 flex flex-col items-center relative">
+        <div
+            class="flex items-center justify-between bg-white/15 backdrop-blur-sm rounded-3xl p-1 pl-5 w-full border border-white/20 relative z-100 transition-all duration-300 focus-within:bg-white/25 focus-within:border-white/50 [&:has(+_#suggestions:not(:empty))]:rounded-b-none">
+            <input id="searchBar"
+                class="flex bg-transparent border-none outline-none text-white text-base whitespace-nowrap overflow-hidden text-ellipsis placeholder:text-white"
+                type="text" placeholder="City...">
+            <button id="button"
+                class="bg-white text-purple-950 border-none rounded-3xl p-2.5 pl-6 pr-6 font-bold cursor-pointer transition-all duration-200 hover:bg-gray-200 hover:scale-105">Check</button>
         </div>
-        <div id="suggestions"></div>
-        <div>
-            <h3 id="city">City</h3>
-            <img id="icon">
-            <h1 id="temperature">--°C</h1>
-            <h3 id="description">Description</h3>
+        <div id="suggestions" class="w-full bg-purple-900/90 backdrop-blur-lg rounded-b-3xl rounded-bl-3xl max-h-50 overflow-y-auto absolute top-12 left-0 z-100 border border-white/20 border-t-0 hidden"></div>
+        <div class="text-center mt-7.5 text-white">
+            <h3 id="city" class="text-4xl">City</h3>
+            <img id="icon" class="w-30 h-30 box-border">
+            <h1 id="temperature" class="text-7xl m-1 mr-0 ml-0">--°C</h1>
+            <h3 id="description" class="text-xl opacity-90">Description</h3>
         </div>
-        <hr>
-        <div>
-            <div>
-                <p id="humidity">--%</p>
-                <p>Humidity</p>
+        <hr class="w-4/5 m-6.25 mr-0 ml-0 border border-white/20">
+        <div class="flex w-full justify-between items-center">
+            <div class="flex text-center flex-1 text-white min-h-12.5 flex-col justify-between">
+                <p id="humidity" class="opacity-80 block font-bold text-lg mb-1">--%</p>
+                <p class="text-sm opacity-80">Humidity</p>
             </div>
-            <hr>
-            <div>
-                <p id="feelsLike">--°C</p>
-                <p>Feels like</p>
+            <hr class="w-px h-10 bg-white/20 border-none">
+            <div class="flex text-center flex-1 text-white min-h-12.5 flex-col justify-between">
+                <p id="feelsLike" class="opacity-80 block font-bold text-lg mb-1">--°C</p>
+                <p class="text-sm opacity-80">Feels like</p>
             </div>
-            <hr>
-            <div id="windSpeed">
-                <p>--km/h</p>
-                <p>Wind</p>
+            <hr class="w-px h-10 bg-white/20 border-none">
+            <div class="flex text-center flex-1 text-white min-h-12.5 flex-col justify-between">
+                <p id="windSpeed" class="opacity-80 block font-bold text-lg mb-1">--km/h</p>
+                <p class="text-sm opacity-80">Wind</p>
             </div>
         </div>
     </div>
