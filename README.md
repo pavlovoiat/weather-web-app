@@ -8,7 +8,7 @@ A simple pet project designed to practice working with REST APIs, asynchronous J
 
 ## Tech Stack
 
-- HTML5 / Tailwindcss
+- HTML5 / Tailwind CSS
 - JavaScript (Fetch API / Async-Await)
 - OpenWeatherMap API
 
